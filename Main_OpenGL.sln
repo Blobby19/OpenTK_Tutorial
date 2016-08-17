@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main_OpenGL", "Main_OpenGL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial3", "OpenTKTutorial3\OpenTKTutorial3.csproj", "{21B8CA49-D1C2-45EA-93A1-6D8EA6869A57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial4", "OpenTKTutorial4\OpenTKTutorial4.csproj", "{F859FAA0-A8D8-4231-B33D-C66D11F4B38B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial5", "OpenTKTutorial5\OpenTKTutorial5.csproj", "{48D7D342-67D8-4E8D-B7FB-710B206E3C12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{21B8CA49-D1C2-45EA-93A1-6D8EA6869A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21B8CA49-D1C2-45EA-93A1-6D8EA6869A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21B8CA49-D1C2-45EA-93A1-6D8EA6869A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F859FAA0-A8D8-4231-B33D-C66D11F4B38B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F859FAA0-A8D8-4231-B33D-C66D11F4B38B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F859FAA0-A8D8-4231-B33D-C66D11F4B38B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F859FAA0-A8D8-4231-B33D-C66D11F4B38B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
