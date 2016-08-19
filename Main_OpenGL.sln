@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial4", "OpenTKTu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial5", "OpenTKTutorial5\OpenTKTutorial5.csproj", "{48D7D342-67D8-4E8D-B7FB-710B206E3C12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenTKTutorial6", "OpenTKTutorial6\OpenTKTutorial6.csproj", "{98E37C40-00BF-4F71-ACF7-64E64333BFBD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48D7D342-67D8-4E8D-B7FB-710B206E3C12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E37C40-00BF-4F71-ACF7-64E64333BFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E37C40-00BF-4F71-ACF7-64E64333BFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E37C40-00BF-4F71-ACF7-64E64333BFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E37C40-00BF-4F71-ACF7-64E64333BFBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
