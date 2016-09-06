@@ -56,6 +56,10 @@ namespace OpenTKTutorial7
             tc2.TextureID = textures["opentksquare2.png"];
             objects.Add(tc2);
 
+            ObjVolume obj = ObjVolume.LoadFromFile("cow.obj");
+            obj.TextureID = textures["opentksquare.png"];
+            objects.Add(obj);
+
             cam.Position += new Vector3(0f, 0f, 3f);
         }
 
