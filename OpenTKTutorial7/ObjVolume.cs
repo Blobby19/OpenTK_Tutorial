@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenTK;
 using System.IO;
+using System.Globalization;
 
 namespace OpenTKTutorial7
 {
@@ -105,11 +106,15 @@ namespace OpenTKTutorial7
             List<Vector2> texs = new List<Vector2>();
             List<Tuple<int, int, int>> faces = new List<Tuple<int, int, int>>();
 
+            NumberStyles styles = NumberStyles.AllowDecimalPoint | NumberStyles.AllowThousands;
+            CultureInfo culture = CultureInfo.InvariantCulture;
+
             // Read file line by line
             foreach (String line in lines)
             {
                 if (line.StartsWith("v ")) // Vertex definition
                 {
+                    styles = NumberStyles.Float;
                     // Cut off beginning of line
                     String temp = line.Substring(2);
 
@@ -120,9 +125,9 @@ namespace OpenTKTutorial7
                         String[] vertparts = temp.Split(' ');
 
                         // Attempt to parse each part of the vertice
-                        bool success = float.TryParse(vertparts[0], out vec.X);
-                        success |= float.TryParse(vertparts[1], out vec.Y);
-                        success |= float.TryParse(vertparts[2], out vec.Z);
+                        bool success = float.TryParse(vertparts[0], styles, culture, out vec.X);
+                        success |= float.TryParse(vertparts[1], styles, culture, out vec.Y);
+                        success |= float.TryParse(vertparts[2], styles, culture, out vec.Z);
 
                         // Dummy color/texture coordinates for now
                         colors.Add(new Vector3((float)Math.Sin(vec.Z), (float)Math.Sin(vec.Z), (float)Math.Sin(vec.Z)));
@@ -134,11 +139,11 @@ namespace OpenTKTutorial7
                             Console.WriteLine("Error parsing vertex: {0}", line);
                         }
                     }
-
                     verts.Add(vec);
                 }
                 else if (line.StartsWith("f ")) // Face definition
                 {
+                    styles = NumberStyles.Integer | NumberStyles.Number | NumberStyles.Any;
                     // Cut off beginning of line
                     String temp = line.Substring(2);
 
@@ -149,11 +154,13 @@ namespace OpenTKTutorial7
                         String[] faceparts = temp.Split(' ');
 
                         int i1, i2, i3;
+                        Console.WriteLine(faceparts[0]);
 
                         // Attempt to parse each part of the face
-                        bool success = int.TryParse(faceparts[0], out i1);
-                        success |= int.TryParse(faceparts[1], out i2);
-                        success |= int.TryParse(faceparts[2], out i3);
+                        bool success = int.TryParse(faceparts[0], styles, culture, out i1);
+                        Console.WriteLine(i1);
+                        success |= int.TryParse(faceparts[1], styles, culture, out i2);
+                        success |= int.TryParse(faceparts[2], styles, culture, out i3);
 
                         // If any of the parses failed, report the error
                         if (!success)
